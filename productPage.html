@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+      integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+      integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/productPage.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- Start Navbar -->
+
+    <nav class="nav-container" dir="rtl">
+      <!-- Top Nav -->
+      <div class="top-nav">top nav</div>
+
+      <!-- Main Nav -->
+      <div class="main-nav">
+        <button class="open">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <button class="close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <ul class="nav-links">
+          <li class="link home active"><a href="index.html">الرئيسية</a></li>
+          <li class="link about"><a href="about.html">عنا</a></li>
+
+          <ul class="home-dynamic-content dynamic">
+            <li>
+              <a href="#">sub home</a>
+              <i class="fa-solid fa-chevron-left"></i>
+            </li>
+
+            <li>
+              <a href="#">sub home</a>
+              <i class="fa-solid fa-chevron-left"></i>
+            </li>
+          </ul>
+
+          <ul class="about-dynamic-content dynamic">
+            <li>
+              <a href="#">sub about</a>
+              <i class="fa-solid fa-chevron-left"></i>
+            </li>
+            <li>
+              <a href="#">sub about</a>
+              <i class="fa-solid fa-chevron-left"></i>
+            </li>
+          </ul>
+        </ul>
+
+        <h2 class="logo">WONDER</h2>
+
+        <ul style="display: flex; gap: 10px" class="help-icon">
+          <i class="fa-regular fa-heart"></i>
+          <i class="fa-solid fa-cart-shopping"> </i>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="product-page-container">
+      <section class="product-container"></section>
+      <section class="about-product" dir="rtl">
+        <div class="politics">
+          <div class="shipping">
+            <i class="fa-solid fa-truck-fast"></i>
+            <div class="shipping-desc">
+              <h4>خصم الشحن</h4>
+              <p>سعر مخفض للشحن السريع للطلبات التي تزيد عن 3200 جنيه.</p>
+            </div>
+          </div>
+          <div class="easy-return">
+            <i class="fa-solid fa-recycle"></i>
+            <div class="return-desc">
+              <h4>سهولة الإرجاع</h4>
+              <p>
+                الإرجاع خلال 45 يومًا من تاريخ الشراء. الرسوم والضرائب غير قابلة
+                للاسترداد.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="about-style">
+          <h3>إعرف أكثر حول هذا التصميم</h3>
+          <p>
+            تتميز هذه القطعة بارتفاع عالٍ، وطول حتى الكاحل، وساق أسطوانية، مع
+            جيوب أمامية بزاوية، وجيوب خلفية بحاشية، وسهام أمامية وخلفية للشكل،
+            وسحاب، من القطن العضوي مع لمسة من الكتان.
+          </p>
+        </div>
+      </section>
+      <div class="care" dir="rtl">
+        <h3>طرق الإهتمام بالمنتج</h3>
+        <p>
+          يُغسل في الغسالة بماء بارد مع الألوان المشابهة. فقط المبيضات التي لا
+          تحتوي على الكلور عند الحاجة. تجفيف بالمجفف على درجة منخفضة. مكواة
+          دافئة عند الحاجة.
+        </p>
+      </div>
+      <section class="more-to-love" dir="rtl"></section>
+    </div>
+    <div class="footer" dir="rtl">
+      <div class="main-footer">
+        <div class="account links">
+          <h3>
+            الحساب <i class="fa-solid fa-plus" id="fa-account-plus"></i>
+            <i class="fa-solid fa-minus" id="fa-account-minus"></i>
+          </h3>
+          <ul>
+            <li><a href="#">دخول</a></li>
+            <li><a href="#">حساب جديد</a></li>
+          </ul>
+        </div>
+        <div class="about links">
+          <h3>
+            واندر <i class="fa-solid fa-plus" id="fa-about-plus"></i>
+            <i class="fa-solid fa-minus" id="fa-about-minus"></i>
+          </h3>
+          <ul>
+            <li><a href="#">عن الشركة</a></li>
+            <li><a href="#">رؤيتنا</a></li>
+            <li><a href="#">الاسئلة الشائعة </a></li>
+          </ul>
+        </div>
+        <div class="help links">
+          <h3>
+            المساعدة <i class="fa-solid fa-plus" id="fa-help-plus"></i>
+            <i class="fa-solid fa-minus" id="fa-help-minus"></i>
+          </h3>
+          <ul>
+            <li><a href="#">الشحن والاسترجاع</a></li>
+            <li><a href="#">طرق الدفع </a></li>
+            <li><a href="#">جدول المقاسات </a></li>
+          </ul>
+        </div>
+        <div class="contact-us links">
+          <h3>
+            اتصل بنا <i class="fa-solid fa-plus" id="fa-contact-us-plus"></i>
+            <i class="fa-solid fa-minus" id="fa-contact-us-minus"></i>
+          </h3>
+          <ul>
+            <li><a href="#">فيسبوك</a></li>
+            <li><a href="#">انستجرام</a></li>
+            <li><a href="#">تيك توك</a></li>
+            <li><a href="#">لينكد ان</a></li>
+          </ul>
+        </div>
+        <div class="footer-input">
+          <p class="sign-sale">سجل الان واحصل على خصم 15% على طلبك الأول</p>
+          <div class="email-address">
+            <input type="text" placeholder="إشترك ببريدك الإلكتروني" class="" />
+            <div
+              style="
+                padding: 4px;
+                background-color: black;
+                width: 3.2rem;
+                height: 3.2rem;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <i class="fa-solid fa-arrow-left"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p
+        style="
+          text-align: center;
+          font-size: 12px;
+          margin-top: 16px;
+          color: #737373;
+        "
+        class=""
+      >
+        © جميع الحقوق محفوظة شركه وندر للتجارة
+      </p>
+    </div>
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

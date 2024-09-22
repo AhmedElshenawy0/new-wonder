@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/allProducts.css" />
+  </head>
+  <body>
+    <!-- Start Navbar -->
+
+    <nav class="nav-container" dir="rtl">
+      <!-- Top Nav -->
+      <div class="top-nav">top nav</div>
+
+      <!-- Main Nav -->
+      <div class="main-nav">
+        <button class="open">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <button class="close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <ul class="nav-links">
+          <li class="link home active"><a href="index.html">الرئيسية</a></li>
+          <li class="link about"><a href="about.html">عنا</a></li>
+          <li class="link about"><a href="allProducts.html">المنتجات</a></li>
+
+
+          <ul class="home-dynamic-content dynamic">
+            <li>
+              <a href="#">sub home</a>
+              <i class="fa-solid fa-chevron-left"></i>
+            </li>
+
+            <li>
+              <a href="#">sub home</a>
+              <i class="fa-solid fa-chevron-left"></i>
+            </li>
+          </ul>
+
+          <ul class="about-dynamic-content dynamic">
+            <li>
+              <a href="#">sub about</a>
+              <i class="fa-solid fa-chevron-left"></i>
+            </li>
+            <li>
+              <a href="#">sub about</a>
+              <i class="fa-solid fa-chevron-left"></i>
+            </li>
+          </ul>
+        </ul>
+
+        <h2 class="logo">WONDER</h2>
+
+        <ul style="display: flex; gap: 10px" class="help-icon">
+          <i class="fa-regular fa-heart"></i>
+          <i class="fa-solid fa-cart-shopping"></i>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Start Products Page -->
+
+    <div class="all-products-page-container" dir="rtl">
+      <!-- Start Filter -->
+      <div class="responsive-filters">
+        <p class="count"></p>
+
+        <button class="responsive-filter-buttom">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 23 19"
+            fill="none"
+            class="filter_svg__feather filter_svg__feather-filter everlane-icon styles_filter-toggle__filter-icon__ILXRd"
+          >
+            <path
+              stroke="currentColor"
+              d="M.625 3.829h21.75M.625 14.738h21.75"
+            ></path>
+            <circle
+              cx="7.455"
+              cy="4"
+              r="3.375"
+              fill="#fff"
+              stroke="currentColor"
+            ></circle>
+            <circle
+              cx="14.999"
+              cy="14.909"
+              r="3.375"
+              fill="#fff"
+              stroke="currentColor"
+            ></circle>
+          </svg>
+          FILTERS
+        </button>
+      </div>
+
+      <div class="filters">
+        <p class="count"></p>
+        <!-- <i class="fa-solid fa-xmark close-filters"></i> -->
+        <!-- Start Category Filter -->
+
+        <div class="category-filter">
+          <div class="category-input">
+            <input
+              class="checkmark"
+              type="checkbox"
+              name="category"
+              id="Dresses"
+              value="Dresses"
+              onclick="handleCategoryClick()"
+            />
+            <label for="Dresses">فساتين</label>
+          </div>
+          <div class="category-input">
+            <input
+              class="checkmark"
+              type="checkbox"
+              name="category"
+              id="pants"
+              value="pants"
+              onclick="handleCategoryClick()"
+            />
+            <label for="pants">بناطيل</label>
+          </div>
+          <div class="category-input">
+            <input
+              class="checkmark"
+              type="checkbox"
+              name="category"
+              id="jacket"
+              value="jacket"
+              onclick="handleCategoryClick()"
+            />
+            <label for="jacket">جواكيت</label>
+          </div>
+          <div class="category-input">
+            <input
+              class="checkmark"
+              type="checkbox"
+              name="category"
+              id="shirt"
+              value="shirts"
+              onclick="handleCategoryClick()"
+            />
+            <label for="shirt">قمصان</label>
+          </div>
+          <!-- <div class="category-input">
+            <input
+              class="checkmark"
+              type="checkbox"
+              name="category"
+              id="all"
+              value="all"
+              onclick="handleCategoryClick()"
+            />
+            <label for="shirt">الكل</label>
+          </div> -->
+        </div>
+
+        <!-- Start Price Filter -->
+
+        <div class="price-filter ">
+          <div class="price-input">
+            <input
+              type="radio"
+              id="low"
+              name="price"
+              value="low"
+              onclick="handlePriceClick()"
+            />
+            <label for="low">أقل سعر</label>
+          </div>
+
+          <div class="price-input">
+            <input
+              type="radio"
+              id="high"
+              name="price"
+              value="high"
+              onclick="handlePriceClick()"
+            />
+            <label for="high">أعلي سعر</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Start All Products Section -->
+      <div class="products-holder">
+        <div class="page-title">
+          <!-- <p>Home / Woman</p> -->
+          <h3>ملابس نسائية | ملابس وإكسسوارات - أحدث المنتجات</h3>
+        </div>
+        <section class="all-products"></section>
+      </div>
+    </div>
+    <div class="footer" dir="rtl">
+      <div class="main-footer">
+        <div class="account links">
+          <h3>
+            الحساب <i class="fa-solid fa-plus" id="fa-account-plus"></i>
+            <i class="fa-solid fa-minus" id="fa-account-minus"></i>
+          </h3>
+          <ul>
+            <li><a href="#">دخول</a></li>
+            <li><a href="#">حساب جديد</a></li>
+          </ul>
+        </div>
+        <div class="about links">
+          <h3>
+            واندر <i class="fa-solid fa-plus" id="fa-about-plus"></i>
+            <i class="fa-solid fa-minus" id="fa-about-minus"></i>
+          </h3>
+          <ul>
+            <li><a href="#">عن الشركة</a></li>
+            <li><a href="#">رؤيتنا</a></li>
+            <li><a href="#">الاسئلة الشائعة </a></li>
+          </ul>
+        </div>
+        <div class="help links">
+          <h3>
+            المساعدة <i class="fa-solid fa-plus" id="fa-help-plus"></i>
+            <i class="fa-solid fa-minus" id="fa-help-minus"></i>
+          </h3>
+          <ul>
+            <li><a href="#">الشحن والاسترجاع</a></li>
+            <li><a href="#">طرق الدفع </a></li>
+            <li><a href="#">جدول المقاسات </a></li>
+          </ul>
+        </div>
+        <div class="contact-us links">
+          <h3>
+            اتصل بنا <i class="fa-solid fa-plus" id="fa-contact-us-plus"></i>
+            <i class="fa-solid fa-minus" id="fa-contact-us-minus"></i>
+          </h3>
+          <ul>
+            <li><a href="#">فيسبوك</a></li>
+            <li><a href="#">انستجرام</a></li>
+            <li><a href="#">تيك توك</a></li>
+            <li><a href="#">لينكد ان</a></li>
+          </ul>
+        </div>
+        <div class="footer-input">
+          <p class="sign-sale">
+            سجل الان واحصل على خصم 15% على طلبك الأول
+          </p>
+          <div class="email-address">
+            <input
+              type="text"
+              placeholder="إشترك ببريدك الإلكتروني"
+              class=""
+            />
+            <div
+            style="padding: 4px; background-color: black; width: 3.2rem; height: 3.2rem; cursor: pointer; display: flex; justify-content: center; align-items: center;"
+            >
+              <i class="fa-solid fa-arrow-left"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p
+        style="
+          text-align: center;
+          font-size: 12px;
+          margin-top: 16px;
+          color: #737373;
+        "
+        class=""
+      >
+        © جميع الحقوق محفوظة شركه وندر للتجارة
+      </p>
+    </div>
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
