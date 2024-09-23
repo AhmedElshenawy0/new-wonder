@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everlane Product Page</title>
+    <link rel="stylesheet" href="css/test.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Product Image Section -->
+        <div class="product-image">
+            <img id="main-img" src="image/000.webp" alt="Cheeky Jean Light Sky">
+        </div>
+
+        <!-- Product Details Section -->
+        <div class="product-details">
+            <h1>Women's Original Cheeky Jean</h1>
+            <p class="price">$98</p>
+            <p class="description">The cheekiest jeans in your closet. These jeans are designed with a high rise and a straight, relaxed leg. Made from organic cotton.</p>
+            
+            <!-- Sizes Dropdown -->
+            <label for="size">Select Size:</label>
+            <select id="size">
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+            </select>
+            
+            <!-- Color Selection -->
+            <div class="color-section">
+                <label>Color: Light Sky</label>
+                <div class="color-box" style="background-color: #c2d9e9;"></div>
+            </div>
+            
+            <!-- Add to Cart Button -->
+            <button id="add-to-cart">Add to Cart</button>
+
+            <div id="cart-message"></div>
+        </div>
+    </div>
+    <script src="js/jquery-3.7.1.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
